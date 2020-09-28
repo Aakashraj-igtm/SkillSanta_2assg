@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <img src="logo1.png" alt="IIT DELHI LOGO">
+        <div class="right">
+            <span class="hamburger" onclick="change()">&#9776;</span>
+            <ul id="menu">
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li class="extra"><a href="#SERVICES">SERVICES</a>
+                <div class="hidden"><a href="btech.html">BTECH</a>
+                    <a href="#">MTECH</a>
+                    <a href="#">ROBOTICS</a></div></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                <li><a href="#ADMISSIONS">ADMISSIONS</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <center>
+            <img src="delhi_logo.jpeg">
+            <address>
+
+                Indian Institute of Technology Delhi
+Hauz Khas, New Delhi, Delhi 110016
+            </address>
+            <p>Tell No: 011-2659-7135</p>
+            <p>Email : info@iitd.ac.in</p>
+            <p><a href="www.iitd.ac.in">IIT DELHI </a></p>
+        </center>
+    </div>
+    
+    <script>
+        function change()
+        {
+            var x=document.getElementById("menu");
+            if(x.style.display=='block')
+            {
+                x.style.display="none";
+            }
+            else
+            {
+                x.style.display="block";
+            }
+        }
+    </script>
+    
+</body>
+</html>
